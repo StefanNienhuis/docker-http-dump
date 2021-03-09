@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  http-dump:
+    container_name: http-dump
+    image: stefannienhuis/http-dump
+
+    # Use port publishing to change the port to 3000
+    ports:
+      - 3000:8080
+
+    # Use the environment to change the port to 3000
+    # environment:
+    #   PORT: 3000
